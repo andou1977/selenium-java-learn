@@ -1,26 +1,17 @@
 package com.eliasnogueira.page.my;
 
 import com.eliasnogueira.BaseWeb;
-import com.eliasnogueira.data.dynamic.BookingDataFactory;
-import com.eliasnogueira.driver.DriverManager;
 import com.eliasnogueira.page.booking.AccountPage;
 import com.eliasnogueira.page.booking.DetailPage;
 import com.eliasnogueira.page.booking.RoomPage;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 
-import java.time.Duration;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class andouTest extends BaseWeb {
 
     @Test(description = "mon test")
     public void andoulunch() throws InterruptedException {
-//       var bookingInformation = BookingDataFactory.createBookingData();
 
        var accountPage = new AccountPage();
         accountPage.next();
@@ -37,9 +28,9 @@ public class andouTest extends BaseWeb {
 
         var andou=new Andou();
 
-      andou.klclicknow("descriptionjfkjfdlfsdlshdlhjlffggfgdfgdf@Step");
+      andou.klclicknow("Welcome to Paris");
 
-        Thread.sleep(5000);
+        Thread.sleep(2000);
 
 
     }
